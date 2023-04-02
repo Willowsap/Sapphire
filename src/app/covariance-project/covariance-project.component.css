@@ -1,0 +1,96 @@
+.body {
+    background-color: lavender;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    overflow: auto;
+    color: black;
+}
+.mainSplitter {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
+    flex: 1;
+    width: 100%;
+    overflow: auto;
+}
+#pageHeader {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+}
+#matricesSection {
+    min-height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+}
+.matrixBox {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+}
+.doubleWrapper {
+    flex: 1;
+    overflow: auto;
+    justify-content: center;
+
+}
+.dataSection {
+    display: flex;
+    flex : 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    overflow: auto;
+}
+.dataHeader {
+    width: 100%;
+    text-align: center;
+}
+.matrixWrapper {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    max-height: 350px;
+    justify-content: center;
+
+}
+.matrixTitle {
+    text-align: right;
+    min-width: 50px;
+    padding-right: 10px;
+    align-self: center;
+}
+.matrix {
+    display: grid;
+    margin: 8px;
+}
+.matrixEntry {
+    background-color: transparent;
+    outline: transparent;
+    border-width: 0px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0px;
+}
+input.matrixEntry {
+    width: 20px;
+}
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

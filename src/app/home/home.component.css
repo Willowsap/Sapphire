@@ -1,0 +1,16 @@
+#homePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#homePage p {
+    font-size: large;
+    text-align: left;
+}
+
+#homePage p {
+    font-size: large;
+    text-align: left;
+}

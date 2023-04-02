@@ -1,0 +1,22 @@
+mat-toolbar {
+    background-color: #0F52BA;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    list-style: none;
+}
+#header li.link {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#header li.link button:hover {
+    background-color: #041836;
+}

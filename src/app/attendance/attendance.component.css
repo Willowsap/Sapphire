@@ -1,0 +1,90 @@
+#attendance {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    height: 90%;
+    max-height: fit-content;
+    overflow-y: hidden;
+    bottom: 0px
+}
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#inputSection button.invisible {
+    background: transparent;
+    border: none;
+    font-size:0;
+}
+#password {
+    flex: .8;
+}
+#password h1 {
+    font-size: 9rem;
+    text-align: center;
+}
+#qrcode {
+    background-color:#ffffff;
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#qrcode img {
+    flex: .8;
+    padding: 10%;
+    flex: 1;
+}
+#inputSection {
+    position: fixed;
+    display:flex;
+    width: 100%;
+    left:0px;
+    top: 7%;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+#inputFieldWrapper {
+    color: white;
+    background-color: black;
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left:2%;
+    padding-right:2%;
+}
+.namedInput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex:1;
+}
+.namedInput input {
+    height: 100%;
+}
+.namedInput label {
+    padding-right:10px;
+}
+#pwInput {
+    margin-right:5%;
+}
+#inputSection button {
+    border: none;
+    background-color: aqua;
+    color:black;
+    padding-left: 2%;
+    padding-right:2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: larger;
+}
+#inputSection button:hover {
+    cursor:pointer;
+    background-color:rgb(8, 70, 70);
+    color: white;
+}

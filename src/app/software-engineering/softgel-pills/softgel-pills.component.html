@@ -1,0 +1,24 @@
+<main id="pillPage">
+    <mat-sidenav-container id="pillNavBar">
+        <mat-sidenav-content>
+            <mat-accordion>
+                <mat-expansion-panel *ngFor="let part of pillParts, let i=index" class="linkPanel">
+                    <mat-expansion-panel-header class="linkTitle">
+                        SoftGel Pills {{i+1}}: {{part}}:
+                    </mat-expansion-panel-header>
+                    <button class="partLink" mat-button (click)="currPage='uml'+(i+1)">UML Diagram</button>
+                    <button class="partLink" mat-button (click)="currPage='instructions'+(i+1)">Instructions</button>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+
+    <ng-container [ngSwitch]="currPage" id="contentWrapper">
+        <ng-container *ngFor="let p of pillParts, let i=index">
+            <iframe  *ngSwitchCase="'instructions'+(i+1)" [src]="instructionsLoc + (i+1) + '.pdf' | safe"></iframe>
+        </ng-container>
+        <ng-container *ngFor="let p of pillParts, let i=index">
+            <iframe  *ngSwitchCase="'uml'+(i+1)" [src]="umlLoc + (i+1) + '.png' | safe"></iframe>
+        </ng-container>
+    </ng-container>
+</main>

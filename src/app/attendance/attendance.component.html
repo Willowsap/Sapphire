@@ -1,0 +1,22 @@
+<main id="attendance">
+    <section id="inputSection">
+      <button (click)="showInput=!showInput" id="showInput"
+        [ngClass]="{'invisible':!showInput}">{{showInput ? "Close ": "Open "}}Input</button>
+      <section id="inputFieldWrapper" *ngIf="showInput">
+        <span class="namedInput" id="pwInput">
+          <label for="pw">Password:</label>
+          <input type="text" name="pw" id="pw" [(ngModel)]="password">
+        </span>
+        <span class="namedInput" id="qrInput">
+          <label for="qrlink">QR Code:</label>
+          <input type="text" name="qrlink" id="qrlink"[(ngModel)]="qrlink">
+        </span>
+      </section>
+    </section>
+    <section id="password" class="display">
+      <h1>{{password}}</h1>
+    </section>
+    <section id="qrcode" class="display">
+      <img [src]="qrlink" *ngIf="qrlink.length > 1">
+    </section>
+  </main>
